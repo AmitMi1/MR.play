@@ -1,0 +1,14 @@
+<section class="share-play flex column center align-center">
+    <h3>Share playlist with contact</h3>
+    <form (ngSubmit)="onShare(yt.value, sp.value); yt.value=''; sp.value=''">
+        <select #yt name="ytShare" id="ytShare">
+            <option selected value="">Youtube</option>
+            <option *ngFor="let play of ytPlaylists$ | async" value="{{'YT' + play._id}}">{{play.name}}</option>
+        </select>
+        <select #sp name="spShare" id="spShare">
+            <option selected value="">Spotify</option>
+            <option *ngFor="let play of spPlaylists$ | async" value="{{'SP' + play._id}}">{{play.name}}</option>
+        </select>
+        <button type="submit">Share</button>
+    </form>
+</section>

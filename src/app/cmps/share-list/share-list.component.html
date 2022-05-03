@@ -1,0 +1,6 @@
+<section class="share-list">
+    <h2>Share history</h2>
+    <section *ngIf="shares" class="shares">
+        <app-share-preview *ngFor="let share of shares" [share]="share"></app-share-preview>
+    </section>
+</section>

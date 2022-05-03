@@ -1,0 +1,15 @@
+<section class="share-preview">
+    <h3>{{share.sharedAt | date: 'dd/MM/yyyy HH:mm' }}</h3>
+    <section class="flex container">
+        <div class="share-img">
+            <img src="{{share.imgUrl}}" alt="">
+        </div>
+        <div class="share-info grid-center">
+            <h4>{{share.name}}</h4>
+            <p>Shared with: {{share.sharedWithName}}</p>
+            <p *ngIf="share.source == 'YT'">Source: youtube</p>
+            <p *ngIf="share.source == 'SP'">Source: spotify</p>
+            <a target="blank" href="{{share.url}}">Open playlist</a>
+        </div>
+    </section>
+</section>

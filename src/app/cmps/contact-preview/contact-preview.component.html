@@ -1,0 +1,7 @@
+<section title="{{contact.name}} Details" [routerLink]="['/contact', contact._id]" class="contact-preview flex">
+    <div class="flex align-center contact-info">
+        <div class="cover"></div>
+        <img loading="lazy" src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+        <h3>{{contact.name}}</h3>
+    </div>
+</section>

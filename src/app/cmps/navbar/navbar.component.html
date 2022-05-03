@@ -1,0 +1,16 @@
+<section class="navbar grid-center">
+    <nav class="flex center">
+        <a class="home" title="Home" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <fa-icon [icon]="faHouseChimney"></fa-icon>
+        </a>
+        <a class="share" title="Share history" routerLink="/share" routerLinkActive="active">
+            <fa-icon [icon]="faRectangleList"></fa-icon>
+        </a>
+        <a class="contacts" title="Contacts" routerLink="/contact" routerLinkActive="active">
+            <fa-icon [icon]="faUsers"></fa-icon>
+        </a>
+        <!-- <a routerLink="/contact" routerLinkActive="active">
+            <fa-icon [icon]="faChartPie"></fa-icon>
+        </a> -->
+    </nav>
+</section>

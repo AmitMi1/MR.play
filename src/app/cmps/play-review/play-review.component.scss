@@ -1,0 +1,42 @@
+.play-review {
+    // background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    // margin-block-end: 50px;
+    // border-radius: 3px;
+
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+
+    div {
+        text-align: center;
+        width: 100%;
+
+        h1 {
+            max-width: 250px;
+        }
+
+        * {
+            margin: 0;
+        }
+    }
+
+    a {
+        color: rgb(226, 19, 19);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            // border-bottom: 1px solid red;
+        }
+    }
+
+    img {
+        // width: clamp(50px, 50px + 5vw, 100px);
+        width: 100px;
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 3px;
+        margin-inline-end: 20px;
+    }
+}

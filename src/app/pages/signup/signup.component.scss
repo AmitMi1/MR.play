@@ -1,0 +1,27 @@
+.signup {
+
+    // height: 60vh;
+
+    img {
+        width: 170px;
+        margin-block-end: 20px;
+    }
+
+    h1:first-child {
+        font-size: 30px;
+    }
+
+    h1:last-child {
+        text-align: center;
+        font-size: 22px;
+        max-width: 560px;
+    }
+
+    p {
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<section class="contact-filter" title="Search">
+    <label for="search">
+        <img src="../../../assets/img/search.png" alt="">
+    </label>
+    <input name="search" id="search" [(ngModel)]="filterBy.term" (ngModelChange)="onChangeFilter()" type="text"
+        placeholder="Search...">
+</section>

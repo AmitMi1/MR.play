@@ -1,0 +1,15 @@
+<section class="signup flex column center align-center">
+    <h1>Signup</h1>
+    <img src="../../../assets/img/profile.png" alt="">
+    <form ngNativeValidate (ngSubmit)="onSignup()" class="grid-center">
+        <label for="name">Name:</label>
+        <input required [(ngModel)]="user.name" type="text" name="name" id="name" />
+        <label for="ytId">Youtube ID: </label>
+        <input required [(ngModel)]="user.ytId" type="text" name="ytId" id="ytId" />
+        <label for="spId">Spotify ID: </label>
+        <input required [(ngModel)]="user.spId" type="text" name="spId" id="spId" />
+        <p (click)="onGuest()">click here for example</p>
+        <button type="submit">save</button>
+    </form>
+    <h1>Gather all your playlists from youtube and spotify and share them with your contacts ,all from one spot.</h1>
+</section>

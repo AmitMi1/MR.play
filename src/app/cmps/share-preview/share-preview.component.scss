@@ -1,0 +1,39 @@
+.share-preview {
+    padding: 20px;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    a {
+        color: red;
+    }
+
+    .container {
+        gap: 10px;
+    }
+
+    .share-img {
+        img {
+            width: clamp(100px, 100px + 5vw, 200px);
+            // height: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+    }
+
+    .share-info {
+        width: 100%;
+        text-align: center;
+
+        h4 {
+
+            margin-top: 0;
+        }
+    }
+
+    h3 {
+        // margin: 0;
+    }
+}

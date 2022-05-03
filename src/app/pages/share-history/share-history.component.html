@@ -1,0 +1,6 @@
+<section class="share-history grid-center">
+    <app-share-list *ngIf="user.shares.length; else noShare" [shares]="user.shares"></app-share-list>
+    <ng-template class="" #noShare>
+        <h3>You have not shared anything yet...</h3>
+    </ng-template>
+</section>

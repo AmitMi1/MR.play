@@ -1,0 +1,104 @@
+.contact-details {
+    // position: relative;
+    // height: 100%;
+    // height: calc(100vh - 84px);
+    // height: 100vh;
+    // overflow-y: auto;
+    // // position: relative;
+
+    // @media (max-width: 450px) {
+    //     height: calc(100vh - 140px);
+    // }
+    .contact-details-container {
+        height: calc(100vh - 100px);
+        // height: 100vh;
+
+    }
+
+    .user-info {
+        // height: 40%;
+        font-size: clamp(14px, 14px + 1vw, 20px);
+    }
+
+    .transfer-funds {
+        // height: 10%;
+    }
+
+
+    .move-list {
+        // height: calc(100vh - 500px);
+
+    }
+
+    .move-list-container {
+        height: calc(100vh - 560px);
+        // height: calc(100% - px);
+        // height: min-content;
+        // height: 100%;
+    }
+
+    .actions {
+        // max-height: 10%;
+        // position: fixed;
+        // width: 100%;
+        // justify-content: space-between;
+        // position: absolute;
+        // flex-direction: row-reverse;
+        // margin-top: 10px // position: relative;
+    }
+
+    a {
+        @include customBtn;
+        background-color: rgb(14, 107, 228);
+        position: absolute;
+        right: 20px;
+        bottom: 65px;
+        // bottom: 0px;
+    }
+
+    .btn-remove {
+        @include customBtn;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-color: #db2525;
+        color: #db2525;
+        position: absolute;
+        left: 20px;
+        bottom: 65px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        div {
+            svg {
+                &:first-child {
+                    margin-block-start: 18px;
+                    margin-inline-start: -1px;
+                }
+
+
+            }
+        }
+    }
+
+    .contact-img {
+        // width: 9vw;
+        // max-width: 130px;
+        width: clamp(100px, 100px + 2vw, 200px);
+        // height: 180px;
+        border: 4px solid rgba(105, 105, 105, 0.5);
+        border-radius: 50%;
+        padding: 5px;
+        margin-block-end: 10px;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    p {
+        // font-size: (20px);
+        margin-block-end: 10px;
+    }
+}

@@ -1,0 +1,6 @@
+<section *ngIf="playlists" class="play-list">
+    <h1> <img [src]="iconUrl" alt=""> {{title}}</h1>
+    <div class="list">
+        <app-play-review *ngFor="let playlist of playlists" [playlist]="playlist"></app-play-review>
+    </div>
+</section>

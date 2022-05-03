@@ -1,0 +1,49 @@
+.move-list {
+    width: 100%;
+    // max-height: fit-content;
+
+    .move-head {
+        background-color: rgba(211, 211, 211, 0.3);
+        padding: 5px 10px;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .move-list-container {
+        // margin-inline: 20px;
+        // border-radius: 3px;
+        // width: calc(100% + 1px);
+
+        // min-height: 200px;
+        overflow-y: auto;
+    }
+
+    .move-container {
+        &:not(:last-child) {
+
+            margin-block-end: 2px;
+        }
+
+        background-color: rgba(211, 211, 211, 0.15);
+        padding: 5px 10px;
+
+
+        .move-amount {
+            margin-block: 5px;
+
+            font-weight: 500;
+
+            .bitcoin {
+                color: rgb(80, 227, 80);
+            }
+
+            .dollar {
+                color: rgb(159, 159, 159);
+            }
+
+        }
+
+        .move-time {
+            color: rgb(185, 185, 185);
+        }
+    }
+}

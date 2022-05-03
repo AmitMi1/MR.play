@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "play-55b86": {
+      "hosting": {
+        "MR.play": [
+          "play-55b86"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "play-55b86"
+  }
+}

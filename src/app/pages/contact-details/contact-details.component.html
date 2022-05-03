@@ -1,0 +1,12 @@
+<section class="contact-details">
+    <section class="user-info grid-center">
+        <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+        <h3>Name: {{contact.name}}</h3>
+        <h3>Phone: {{contact.phone}}</h3>
+        <h3>Email: {{contact.email}}</h3>
+    </section>
+    <app-share-play [contact]="contact"></app-share-play>
+    <a [routerLink]="['/contact/edit', contact._id]" class=""><img src="../../../assets/img/edit.png" alt=""></a>
+
+
+</section>

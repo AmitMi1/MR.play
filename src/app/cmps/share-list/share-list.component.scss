@@ -1,0 +1,27 @@
+.share-list {
+    border-radius: 3px;
+    margin-top: 20px;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        // margin-inline: auto;
+        margin: 0;
+        padding-block: 15px;
+    }
+
+    background-color: rgba(0, 0, 0, 0.318);
+    // padding-inline: 20px;
+    width: fit-content;
+    margin-inline: auto;
+    height: fit-content;
+    // height: calc(100vh - 150px);
+
+    .shares {
+        height: calc(100vh - 200px);
+        overflow-y: auto;
+
+    }
+
+}

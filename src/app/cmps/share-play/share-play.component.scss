@@ -1,0 +1,58 @@
+.share-play {
+    // position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 20px;
+    border-radius: 3px;
+
+    button {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: whitesmoke;
+        border: 1px solid rgba(245, 245, 245, 0.496);
+        padding: 3px;
+        padding-inline: 10px;
+        font-size: 16px;
+        border-radius: 3px;
+        transition: all 200ms ease-in-out;
+        position: relative;
+        bottom: 0;
+
+        &:hover {
+            border-color: whitesmoke;
+        }
+
+        &:active {
+            transform: scale(0.95);
+            position: relative;
+            bottom: 3px;
+        }
+    }
+
+    select {
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            border-color: whitesmoke;
+        }
+
+        cursor: pointer;
+        border-radius: 3px;
+        width: 150px;
+        margin-inline-end: 10px;
+        padding: 3px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: whitesmoke;
+    }
+
+    option {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    h3 {
+        margin-block-start: 0;
+    }
+
+}

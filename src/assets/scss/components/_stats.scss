@@ -1,0 +1,19 @@
+.statistics {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+
+    p {
+        margin-inline-start: 5px;
+        margin-block-start: -5px;
+        font-size: 0.85rem;
+    }
+
+    h4:not(:first-child) {
+        margin-block-start: 50px;
+        margin-block-end: 10px;
+    }
+
+    h4:first-child {
+        margin-block-end: 10px;
+    }
+}

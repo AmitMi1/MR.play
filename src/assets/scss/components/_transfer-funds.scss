@@ -1,0 +1,25 @@
+.transfer-funds {
+    background-color: rgba(211, 211, 211, 0.15);
+    padding: 10px;
+    gap: 10px;
+    border-radius: 3px;
+    margin-block: 10px;
+
+    form {
+        gap: 5px;
+
+        input {
+            @include formInput;
+        }
+
+        label {
+            // height: 35px;
+            font-size: 18px;
+        }
+
+        button {
+            @include formBtn;
+        }
+    }
+
+}

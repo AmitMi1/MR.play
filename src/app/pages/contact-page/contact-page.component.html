@@ -1,0 +1,9 @@
+<section class="contact-page">
+    <div class="grid-center list">
+        <app-contact-list [contacts]="contacts$ | async"></app-contact-list>
+        <div class="flex space-between actions">
+            <app-contact-filter></app-contact-filter>
+            <a class="" routerLink="edit"><img src="../../../assets/img/add-friend.png" alt=""></a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+.play-list {
+    background-color: rgba(0, 0, 0, 0.5);
+    // padding: 10px;
+    border-radius: 3px;
+    min-width: 300px;
+
+    @media (max-width: 660px) {
+        width: 75vw;
+
+        // min-width: 300px\\\;
+    }
+
+
+    h1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 3px 3px 0 0;
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.077);
+        line-height: 26px;
+
+        // background: url('../../../assets/img/bg.jpg');
+        // background-position: center;
+        // margin-block-end: 10px;
+        img {
+            margin-inline-end: 10px;
+            width: 30px;
+            vertical-align: bottom;
+            // position: relative;
+            // top: 5px;
+            // margin: 0;
+        }
+    }
+
+    .list {
+        @media (max-width: 660px) {
+            max-height: 40vh;
+        }
+
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+}

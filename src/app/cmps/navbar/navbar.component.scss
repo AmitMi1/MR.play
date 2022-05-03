@@ -1,0 +1,60 @@
+.navbar {
+    // background-color: black;
+
+    nav {
+        // background-color: black;
+        position: fixed;
+        bottom: 0;
+
+        a {
+            transition: all 200ms ease-in-out;
+
+            &:first-child {
+                border-radius: 3px 0px 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0px 3px 0 0;
+            }
+
+            background-color: rgba(0, 0, 0, 0.634);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            font-size: 24px;
+            // display: inline-block;
+            width: clamp(50px, 50px + 10vw, 120px);
+            // height: 100px;
+            aspect-ratio: 16/9;
+
+            &.active,
+            &:hover {
+                // color: rgb(10, 67, 122);
+
+                background-color: rgba(23, 23, 23, 0.5);
+
+                &.home {
+                    color: rgb(165, 21, 21);
+
+                }
+
+                &.share {
+                    color: rgb(94, 94, 94);
+
+                }
+
+                &.contacts {
+                    color: rgb(0, 68, 239);
+
+                }
+
+            }
+
+            &:hover {
+                background-color: rgba(23, 23, 23, 0.65);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,72 @@
+.navbar {
+
+    // width: 100%;
+    // max-width: 500px;
+    // position: fixed;
+    // bottom: 0;
+    // margin-inline-start: -20px;
+    // margin-block-start: 40px;
+    nav {
+
+        gap: 10px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.242);
+            color: whitesmoke;
+            width: clamp(100px, 100px + 15vw, 30vw);
+            height: 50px;
+            font-size: 28px;
+            transition: all .2s ease-in;
+            border: 1px solid whitesmoke;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+
+            &.active {
+                // background-color: rgba(42, 42, 42, 0.821);
+                background-color: rgba(67, 67, 67, 0.649);
+            }
+
+            &:hover {
+                background-color: rgba(217, 213, 213, 0.2);
+            }
+
+            &.link-home {
+
+                &:hover {
+                    color: brown;
+                }
+
+                &.active {
+
+                    color: brown;
+                }
+
+            }
+
+            &.link-contact {
+                &.active {
+                    color: orange;
+                }
+
+                &:hover {
+                    color: orange;
+                }
+
+            }
+
+            &.link-stats {
+                &.active {
+                    color: #309bc9;
+                }
+
+                &:hover {
+                    color: #309bc9;
+                }
+
+            }
+        }
+    }
+}

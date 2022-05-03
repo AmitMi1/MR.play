@@ -1,0 +1,15 @@
+<section class="play-app flex column align-center">
+    <section class="user-section flex align-center">
+        <img src="https://robohash.org/{{user._id}}?set=set5" alt="" className='user-img' />
+        <div>
+            <h3>Hello {{user.name}}!</h3>
+            <p>These are your playlists:</p>
+        </div>
+    </section>
+    <div class="play-container flex">
+        <app-play-list [iconUrl]="'../../../assets/img/youtube.png'" [title]="'YT playlists'"
+            [playlists]="ytPlaylists$ | async"></app-play-list>
+        <app-play-list [iconUrl]="'../../../assets/img/spotify.png'" [title]="'SP playlists'"
+            [playlists]="spPlaylists$ | async"></app-play-list>
+    </div>
+</section>
